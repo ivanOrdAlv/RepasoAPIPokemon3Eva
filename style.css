@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #a8e063 0%, #56ab2f 100%);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    font-family: 'Pokemon Solid', sans-serif;
+}
+
+#pokemon-card {
+    margin-top: 20px;
+    border: 3px solid #333;
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #ffeb3b, #ffca28);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#pokemon-card::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: url('https://www.serebii.net/card/dppromos/cardback.jpg') no-repeat center/cover;
+    z-index: -1;
+    border-radius: 20px;
+}
+
+#pokemon-image {
+    max-width: 100%;
+    margin-bottom: 10px;
+    border: 3px solid #f0f0f0;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, #ffcc00, #ff6600);
+}
+
+#pokemon-details {
+    text-align: left;
+    font-size: 1.1em;
+}
+
+#pokemon-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #d32f2f;
+    text-shadow: 1px 1px 2px #000;
+}
+
+#pokemon-id,
+#pokemon-type,
+#pokemon-abilities {
+    margin: 5px 0;
+}
+
+#pokemon-type,
+#pokemon-abilities {
+    font-weight: bold;
+    color: #0288d1;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px #999;
+}
+
+button:hover {
+    background-color: #ff9900;
+    transform: scale(1.05);
+    box-shadow: 0 6px #777;
+}
+
+button:active {
+    background-color: #ff9900;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}
